@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Article from './pages/Article'
 import FormArticle from './pages/FormArticle'
+import FormArticleEdit from './pages/FormArticleEdit'
 
 function App() {
   // const articles = [
@@ -50,6 +51,7 @@ function App() {
           <Route path="/contact" element={<Contact /> }/>
           <Route path="/articles/:urlId" element={<Article/> }/>
           <Route path="/new" element={<FormArticle /> }/>
+          <Route path="/edit/:urlId" element={<FormArticleEdit /> }/>
           <Route path="/*" element={<Navigate to="/"/> }/>
         </Routes>
 
